@@ -1,0 +1,5 @@
+<div trackUserTime [saveInterval]=saveInterval (sendValue)="refreshTime($event)" (sendLastSaveValue)="refreshLastSavedValue($event)">
+  <h3>Ваше нахождение на странице: {{mainTime}}</h3>
+  <h3>Последнее сохраненное значение: {{lastSavedValue}}</h3>
+  <div>Интервал для сохранения: {{saveInterval}} секунд</div>
+</div>

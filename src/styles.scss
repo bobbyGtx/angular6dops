@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.btn{
+ background: orange;
+  border-radius: 4px;
+  padding: 6px 16px;
+  color: white;
+  cursor: pointer;
+  &:hover{
+    background: #f2cd91;
+    color: black;
+    padding: 6px 16px;
+  }
+  &.small{
+    padding: 2px 4px;
+  }
+}
+
+label:has(input[type=checkbox]){
+  cursor: pointer;
+}

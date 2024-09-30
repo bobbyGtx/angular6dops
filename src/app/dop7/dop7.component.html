@@ -1,0 +1,14 @@
+<div class="dop7">
+  <div class="input-field">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Только Русские" inputConstraint [inputConstraintRegexp]="'^[А-Я][а-я]*$'">
+  </div>
+  <div class="input-field">
+    <label for="nickName">Nickname</label>
+    <input type="text" id="nickName" inputConstraint placeholder="Только латинница и цифры" [inputConstraintRegexp]="'^[A-Za-z0-9]*$'">
+  </div>
+  <div class="input-field">
+    <label for="age">Возвраст</label>
+    <input type="text" id="age" inputConstraint placeholder="Только цифры (до 3-х)" [inputConstraintRegexp]="'^[1-9]\\d{0,2}$'">
+  </div>
+</div>

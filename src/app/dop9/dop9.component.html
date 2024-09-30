@@ -1,0 +1,20 @@
+<div class="dop9">
+  <div>
+    <button class="btn" (click)="toggleModal()">Вызов окна</button>
+  </div>
+<div class="modal-window" *ngIf="showModal" focusTrap>
+  <div class="form">
+    <div>
+      <input type="text">
+    </div>
+    <div>
+      <input type="text">
+    </div>
+    <div>
+      <input type="text">
+    </div>
+    <button class="btn" (click)="toggleModal()">Закрыть окно</button>
+  </div>
+</div>
+
+</div>

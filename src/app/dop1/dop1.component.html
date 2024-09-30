@@ -1,0 +1,52 @@
+<div class="clock-setter">
+  <label>
+    <input type="time" [(ngModel)]="time">
+  </label>
+  <button class="btn small" (click)="resetTime()">Сброс</button>
+</div>
+<div class=color-setters>
+  <div>
+    <label for="morgenColor">Утренний цвет</label>
+    <select [(ngModel)]="morningColor" id="morgenColor">
+      <option value="{{color}}" *ngFor="let color of colors">{{ color }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="dayColor">Дневной цвет</label>
+    <select [(ngModel)]="dayColor" id="dayColor">
+      <option value="{{color}}" *ngFor="let color of colors">{{ color }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="eveningColor">Вечерний цвет</label>
+    <select [(ngModel)]="eveningColor" id="eveningColor">
+      <option value="{{color}}" *ngFor="let color of colors">{{ color }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="nightColor">Ночной цвет</label>
+    <select [(ngModel)]="nightColor" id="nightColor">
+      <option value="{{color}}" *ngFor="let color of colors">{{ color }}</option>
+    </select>
+  </div>
+
+</div>
+<div class="examples">
+  <div timeColor [time]="time"
+       [timeColorMorningColor]="morningColor"
+       [timeColorDayColor]="dayColor"
+       [timeColorEveningColor]="eveningColor"
+       [timeColorNightColor]="nightColor">DIV Элемент
+  </div>
+  <span timeColor [time]="time"
+        [timeColorMorningColor]="morningColor"
+        [timeColorDayColor]="dayColor"
+        [timeColorEveningColor]="eveningColor"
+        [timeColorNightColor]="nightColor">SPAN элемент</span>
+  <p timeColor [time]="time"
+     [timeColorMorningColor]="morningColor"
+     [timeColorDayColor]="dayColor"
+     [timeColorEveningColor]="eveningColor"
+     [timeColorNightColor]="nightColor">Абзац p</p>
+</div>
+

@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <label class="label">
+      <input type="checkbox" checked (click)="changeView($event)">Переключатель отображения списка (<b>{{selectedStyle}}</b>).
+    </label>
+  </div>
+  <div class="users" toggleViewMode [toggleViewModeStyle]="selectedStyle">
+    <div *ngFor="let user of users" class="user-card">
+      <div>{{user.name}}</div>
+      <div><img src="../../assets/{{user.avatar}}.jpg" alt=""></div>
+    </div>
+  </div>
+</div>

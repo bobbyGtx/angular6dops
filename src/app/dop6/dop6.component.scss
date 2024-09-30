@@ -1,0 +1,21 @@
+.dop6{
+  .test-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    input[type=text]{
+      padding: 4px;
+    }
+    button{
+      width: 150px;
+    }
+    .input-field.un-valid{
+      input[type=text]{
+        border: 1px solid red;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}

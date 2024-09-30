@@ -1,0 +1,23 @@
+.dop8r{
+  &>div{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .input-field{
+      display: grid;
+      grid-template-columns: 100px auto;
+      align-items: center;
+      input[type=text]{
+        padding: 5px;
+        max-width: 150px;
+      }
+    }
+    .btn{
+      max-width: 150px;
+    }
+  }
+}

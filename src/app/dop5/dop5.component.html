@@ -1,0 +1,14 @@
+<div class="dop5">
+  <div>
+  <select id="sel1" [(ngModel)]="selectedDigit" autoSelectSingleOption>
+    <option *ngFor="let digit of optionsDigits" value="{{digit}}">{{digit}}</option>
+  </select>
+  <label for="sel1">Выберите цифру</label>
+  </div>
+  <div>
+  <select id="sel2" [(ngModel)]="selectedName" autoSelectSingleOption>
+    <option *ngFor="let name of optionsNames" value="{{name}}">{{name}}</option>
+  </select>
+  <label for="sel1">Выберите имя</label>
+  </div>
+</div>
