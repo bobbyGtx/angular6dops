@@ -1,0 +1,17 @@
+<div class="dop13">
+  <div>
+    <h3>Обычный метод</h3>
+    <ng-container *appRecursiveTemplate="menuData; let item = item; let level = level">
+      <div>{{'-'.repeat(level)}} {{ item.title }}</div>
+    </ng-container>
+  </div>
+
+  <div>
+    <h3>Через сеттер</h3>
+    <ng-container *appRecursiveTemplateSetter="menuData; let item = item; let level = level">
+      <div>{{'-'.repeat(level)}} {{ item.title }}</div>
+    </ng-container>
+  </div>
+
+</div>
+

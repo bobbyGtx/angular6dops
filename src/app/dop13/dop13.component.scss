@@ -1,0 +1,8 @@
+.dop13{
+  display: flex;
+  gap: 20px;
+  &>div{
+    padding: 5px;
+    border: 1px solid black;
+  }
+}

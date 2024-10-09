@@ -1,0 +1,7 @@
+<div *appCheckPermissions="permissions; else noEditPermission">
+  Контент доступен для редактирования.
+</div>
+
+<ng-template #noEditPermission>
+  <div>У вас нет прав для редактирования этого контента.</div>
+</ng-template>

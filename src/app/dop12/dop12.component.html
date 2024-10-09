@@ -1,0 +1,26 @@
+<div class="dop12">
+  <div class="houses">
+    <div class="house" appInteractiveColoring [interactiveColoring]="selectedColor" >
+      <div class="roof"></div>
+      <div class="base">
+        <div class="window"></div>
+      </div>
+    </div>
+    <div class="house" appInteractiveColoring [interactiveColoring]="selectedColor">
+      <div class="roof"></div>
+      <div class="base">
+        <div class="window"></div>
+      </div>
+    </div>
+    <div class="house" appInteractiveColoring [interactiveColoring]="selectedColor">
+      <div class="roof"></div>
+      <div class="base">
+        <div class="window"></div>
+      </div>
+    </div>
+  </div>
+  <div class="select-color">
+    <label for="color-picker">Выберите цвет </label>
+    <input type="color" id="color-picker" [(ngModel)]="selectedColor">
+  </div>
+</div>

@@ -1,0 +1,63 @@
+.dop12{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .houses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    .house{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      .roof{
+        border: 1px solid black;
+        width: 71px;
+        height: 71px;
+        box-sizing: border-box;
+        transform: rotate(45deg) translateY(20%) translateX(50%);
+
+        z-index: 1;
+
+      }
+      .base{
+        position: relative;
+        z-index: 2;
+        border: 1px solid black;
+        padding: 15px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: white;
+        .window{
+          position: relative;
+          z-index: 3;
+          background-color: white;
+          width: 40px;
+          height: 60px;
+          border: 1px solid black;
+          &:before{
+            content: "";
+            position: absolute;
+            border-bottom: 1px solid black;
+            width: 100%;
+            top: 50%;
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            border-left: 1px solid black;
+            height: 100%;
+            left: 50%;
+
+          }
+        }
+      }
+    }
+  }
+
+}
